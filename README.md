@@ -1,9 +1,8 @@
 
 
-# Simulmedia PlayeWON's Take Home Assessment - Soo Park
-Version 1, I designed a simple program with Javascript. 
-Version 2, I incorporated a basic client-side design to the program. Please run index.html on a local device to see the implementation. The index.html can be found under public folder. 
-
+# Simulmedia PlayerWON's Take Home Assessment - Soo Park
+<strong> Version 1 </strong>, I designed a simple program with Javascript. The solution can be seen within the app.js file. <br>
+<strong> Version 2 </strong>, I incorporated a basic client-side design to the program. Please run index.html file on a local device to see the implementation on a browser. The index.html can be found under 'public' folder. 
 
 
 # Assessment Infomration

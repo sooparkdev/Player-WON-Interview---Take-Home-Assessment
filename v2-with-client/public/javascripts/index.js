@@ -16,7 +16,7 @@ async function getMatchingAds() {
                                                                 matchesLanguage(languageCode, ad.lang) &&
                                                                 isInTimeRange(datetime, ad.start_hour, ad.end_hour) } );
         console.log(filteredAds);
-        if (!filteredAds.length == 0)  { // else alert user no result                                                   
+        if (!filteredAds.length == 0)  {                                                    
             let num = 1;
             resultHTML = "<h3> Here are Available Ads ! </h3>";
             resultHTML += filteredAds.map(ad => { 
@@ -71,15 +71,9 @@ function matchesLanguage(clientLanguageCode, adLanguageCode) {
 
 
 function isInTimeRange(clientDatetime, startHour, endHour) {
-    let time = clientDatetime.split('T'); // pulls the 'time' only
+    let time = clientDatetime.split('T'); // pulls out the 'time' only
     let hour_minute = time[1].split(':'); // breaks up 'hour' and 'minute'
-    let hour = hour_minute[0]; // pulls the 'hour' only
-     // if 12 AM --> 00
-    // if 12 PM -- > 12 
-    // if 1-11 PM --> +!2
-    // if PM -- add 12 to hr                                                        
-    // if filtered Ads empty // else alert user no result                                                   
-    //console.log("HOUR:" + hour)
+    let hour = hour_minute[0]; // pulls out the 'hour' only
     if(endHour < startHour && hour < startHour) {
         startHour -= 24; 
     } else if(endHour < startHour) {
