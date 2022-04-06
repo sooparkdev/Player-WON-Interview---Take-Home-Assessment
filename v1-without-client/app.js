@@ -1,10 +1,4 @@
 
-// client side input  -- have a minimal client side design
-// once the user puts in, triggers the function
-// the function finds the matches
-// and returns back which ads can be shown -- the ID and the URL
-
-
 import fetch from 'node-fetch'
 
 async function getMatchingAds(countryCode, languageCode, datetime, adsURL) {
